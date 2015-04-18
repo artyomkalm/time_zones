@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @firm.name %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @firm.tel %>
+</p>
+
+<p>
+  <strong>Time zone:</strong>
+  <%= @firm.time_zone %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @firm.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_firm_path(@firm) %> |
+<%= link_to 'Back', firms_path %>
