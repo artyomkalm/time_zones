@@ -5,9 +5,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  validates :time_zone, 
-  inclusion: { 
-    in: ActiveSupport::TimeZone.zones_map(&:name).keys, message: 'is not valid' } 
+  validates :time_zone, inclusion: { in: ActiveSupport::TimeZone.zones_map(&:name).keys } 
 
 
 end

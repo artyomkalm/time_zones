@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<%= Time.zone.now %>
 <p>
   <strong>Name:</strong>
   <%= @firm.name %>
@@ -12,7 +12,7 @@
 
 <p>
   <strong>Time zone:</strong>
-  <%= @firm.time_zone %>
+  <%= whattime @firm.time_zone %>
 </p>
 
 <p>
